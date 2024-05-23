@@ -1,3 +1,10 @@
+:root {
+  --header-bg: #1A4D2E;
+  --header-fg: #f5efe6;
+  --header-bg-hover: #e8dfca;
+  --header-button-border-hover: #4f6f52;
+}
+
 @font-face {
   font-family: InterRegular;
   src: url("fonts/Inter-4.0/web/Inter-Regular.woff2");
@@ -19,22 +26,39 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  background-color: var(--header-bg);
+  color: var(--header-fg);
 }
 
 header #logo {
   margin: 0px;
   justify-self: start;
   padding-left: 50px;
+  font-size: 40px;
 }
 
 header nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
   justify-self: end;
   padding-right: 50px;
-  display: flex;
   gap: 50px;
 }
 
 header nav button {
   width: 150px;
-  height: 50px;
+  height: 40px;
+  background-color: var(--header-fg);
+  border: 0px;
+  padding: 0px;
+  border-radius: 20px;
+  color: var(--header-bg);
+  font-size: 25px;
+  box-sizing: border-box;
+}
+
+header nav button:hover {
+  background-color: var(--header-bg-hover);
+  border: 1px solid var(--header-button-border-hover);
 }
