@@ -62,3 +62,7 @@ header nav button:hover {
   background-color: var(--header-bg-hover);
   border: 1px solid var(--header-button-border-hover);
 }
+
+#content {
+  background-color: var(--header-bg-hover);
+}
