@@ -1,5 +1,6 @@
 import "./styles.css";
 import menuComponent from "./components/menu/menu";
+import homeComponent from "./components/home/home";
 
 const homeButton = document.querySelector("#home");
 const menuButton = document.querySelector("#menu");
@@ -7,7 +8,7 @@ const aboutButton = document.querySelector("#about");
 
 homeButton.addEventListener("click", () => {
   page.removeContentFromPage();
-  // page.loadPage(homeComponent);
+  page.loadPage(homeComponent);
 });
 
 menuButton.addEventListener("click", () => {
@@ -36,5 +37,5 @@ const page = (() => {
   }
 })();
 
-
+page.loadPage(homeComponent);
 
